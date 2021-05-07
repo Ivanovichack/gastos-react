@@ -10,6 +10,10 @@ class Formm extends Component {
                     <label htmlFor="">Ingrese el costo:</label>
                     <input type="number" name="" id="" className="form-control"/>
                </div>
+               <div className="form-group col-md-3">
+                   <br/>
+                <input type="button" value="Registrar gasto" className="btn btn-info"/>
+               </div>
             </div>            
         );
     }
