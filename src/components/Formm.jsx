@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
+import Select from './GetCategoria';
 
-class formm extends Component {
+class Formm extends Component {
     render(){
         return(
             <div className="form-row">
-               <div className="form-group col-md-6">
-                    <label htmlFor="">Ingrese el tipo:</label>
-                    <select name="" id="" className="form-control">
-                        <option value="">Elegir...</option>
-                        <option value="">other</option>
-                    </select>                    
-               </div>
+            <Select />               
                <div className="form-group col-md-6">
                     <label htmlFor="">Ingrese el costo:</label>
                     <input type="number" name="" id="" className="form-control"/>
@@ -20,4 +15,4 @@ class formm extends Component {
     }
 }
 
-export default formm;
+export default Formm;

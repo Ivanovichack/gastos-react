@@ -9,7 +9,7 @@ function App() {
           </a>         
         </nav>
         <div className="container mt-3">
-          <h2>Formulario de capturas</h2>
+          <h2>Captura el Gasto</h2>
           <Formm />
         </div>
     </div>
