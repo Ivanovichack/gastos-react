@@ -1,30 +1,38 @@
 import React, { Component } from "react";
+import NuevoGasto from "./NuevoGasto";
 
 class Select extends Component {
-
   state = {
-    categoria : ""
+    categoria : "Seleccione una categoría"
   }
 
   handleCategoria = (event) => {
-    this.setState( {
+   // this.props.setCategoria(event.target.value);
+    this.setState({
       categoria : event.target.value
-    })
-  }
-
+    }, console.log(this.state.categoria));
+  }  
+    
   render() {
+    
     return (
-      <div className="form-group col-md-6">
-        <label htmlFor="">Ingrese el tipo:</label>
-        <select onSelect={this.handleCategoria} name="categoria" id="categoria" className="form-control">
-          {this.props.categoria.map((value) => {
-            return <option value={value}>{value}</option>
+      <div className="form-row">        
+        <div className="form-group col-md-6">        
+          <label htmlFor="">Ingrese el tipo:</label>
+          <select onChange={this.handleCategoria} value={this.props.getCategoria} className="form-control">                    
+            <option value={null}>Seleccione una categoría</option>
+            {            
+              this.props.categoria.map((value) => {
+              return <option key={value} value={value}>{value}</option>
           })}
-        </select>
-          
+        </select>        
+        </div>       
+        
       </div>
-    );
+      
+    );    
   }
+  
 }
 
 export default Select;
