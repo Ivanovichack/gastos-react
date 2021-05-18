@@ -22,8 +22,6 @@ class GetCategoria extends Component {
             }}
           </FirebaseDatabaseNode>
         </FirebaseDatabaseProvider>
-
-        
       </div>
     );
   }
