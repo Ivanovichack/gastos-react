@@ -34,7 +34,7 @@ class NuevoGasto extends Component {
                             return (
                                 <div className="form-row">
                                     <div className="form-group col-md-6"> 
-                                        <input type="button" value="Agregar" className="btn btn-primary"
+                                        <input type="button" value="Agregar nuevo gasto" className="mt-3 btn btn-primary"
                                             onClick={async () => {
                                                 await runMutation({
                                                     categoria: this.props.categoria,
@@ -43,6 +43,9 @@ class NuevoGasto extends Component {
                                                     fecha: this.getFecha()
                                                 });
                                             }}
+                                        />
+                                        <input type="button" value="Limpiar campos" className="mt-3 btn btn-success"
+                                            onClick={this.props.clean}
                                         />
                                     </div>
                                 </div>
