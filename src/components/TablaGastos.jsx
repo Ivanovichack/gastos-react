@@ -22,12 +22,11 @@ class TablaGastos extends Component {
                         </tr>
                     </thead>                                                        
                     <FirebaseDatabaseProvider firebase={firebase} {...firebaseConfig}>
-                        <FirebaseDatabaseNode path="gastos/">
+                        <FirebaseDatabaseNode path="gastos/" limitToFirst={3} orderByValue={"fecha"}>
                             {(data) => {
                                 const { value } = data;
                                 if (value === null || typeof value === "undefined") return null;                                
                                 const values = Object.values(value);
-
                                 return <ListaGastos items={values} />
                             }}
                         </FirebaseDatabaseNode>
