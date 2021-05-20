@@ -11,6 +11,7 @@ import ListaGastos from './ListaGastos'
 class TablaGastos extends Component {
     render() {
         return (
+            <div className="row justify-content-center">
             <div className="form-group col-md-6">
                 <table className="table">
                     <thead>
@@ -32,6 +33,7 @@ class TablaGastos extends Component {
                         </FirebaseDatabaseNode>
                     </FirebaseDatabaseProvider>
                 </table>
+            </div>
             </div>
         )
     }

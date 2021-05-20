@@ -17,8 +17,7 @@ class ListaGastos extends Component {
                     )
                 })                   
                 }
-            </tbody>
-            
+            </tbody>            
         )
     }
 }

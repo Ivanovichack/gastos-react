@@ -57,7 +57,7 @@ class Formm extends Component {
               const { value } = data;
               if (value === null || typeof value === "undefined") return null;
               const values = Object.values(value);
-              return <div className="form-row">
+              return <div className="row justify-content-center">
                 <div className="form-group col-md-6">
                   <label htmlFor="">Ingrese el tipo:</label>
                   <select
@@ -79,7 +79,7 @@ class Formm extends Component {
             }}
           </FirebaseDatabaseNode>
         </FirebaseDatabaseProvider>
-        <div className="form-row">
+        <div className="row justify-content-center">
           <div className="form-group col-md-6">
             <label htmlFor="">Ingrese el costo:</label>
             <input
@@ -92,7 +92,7 @@ class Formm extends Component {
             />
           </div>
         </div>
-        <div className="form-row">
+        <div className="row justify-content-center">
           <div className="form-group col-md-6">
             <label htmlFor="">Ingrese un detalle:</label>
             <input
