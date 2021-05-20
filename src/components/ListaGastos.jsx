@@ -5,8 +5,8 @@ class ListaGastos extends Component {
         return(
             <tbody>
                 {
-                this.props.items.map((key,val) => {
-                    const s = Object.values(key);                    
+                this.props.items.map((val) => {
+                    const s = Object.values(val);                    
                     return(
                         <tr>
                             <td>{s[0]}</td>
